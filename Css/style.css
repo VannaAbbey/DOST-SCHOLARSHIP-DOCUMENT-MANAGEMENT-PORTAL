@@ -1,0 +1,147 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.body bg{
+    width:440px;
+    height:540px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    height:520px;
+    width:840px;
+    margin-top: 88px;
+    margin-bottom: 30px;
+    align-content: center;
+    
+}
+
+body{
+    
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background: rgb(102, 177, 220);
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+    /*width:50%;*/
+    width:430px;
+    height:520px;
+    margin-top: 0.94px;
+    background-color: aliceblue;
+}
+
+
+.header{
+    padding-top: 15px;
+    margin-top: 50px;
+    font-size: 36px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 30px;
+    margin-left: 58px;
+}
+
+.color-blue{
+    color: rgb(70, 153, 201);
+}
+
+.color-grey{
+    color:rgb(86, 82, 82);
+}
+
+
+.form label1{
+    align-self:normal;
+    margin-top: 11px;
+    margin-left: 41px;
+    margin-bottom: 4px;
+}
+
+.form label2{
+    align-self:normal;
+    margin-top: 6px;
+    margin-left: 41px;
+    margin-bottom: 4px;
+}
+
+.form label3{
+    align-self:normal;
+    margin-top: 6px;
+    margin-left: 41px;
+    margin-bottom: 4px;
+}
+
+.newuser{
+    font-size: 12;
+    align-self:normal;
+    margin-top: 1px;
+    margin-left: 123px;
+}
+
+.newuser a{
+    color:#1582aa;
+}
+
+
+.box{
+    margin-top: 9px;
+    padding:4px;
+    width: 80%;
+    margin:1px;
+    border: 1px solid rgb(105, 105, 176);
+    outline: none;
+    border-radius: 4px;
+    align-self: center;
+}
+
+#btn{
+    color: white;
+    /*background: linear-gradient(to right, #1582aa, #3b4f62);*/
+    /*background: linear-gradient(to right, #2889ac, #3b5f7e);*/
+    /*background: linear-gradient(to right, #5f5f61, #34363f);*/
+    margin-top: 6px;
+    /*background: #2c81a0;*/
+    background: #1582aa;
+    padding: 8px;
+    font-size: 14px;
+    width:55%;
+    align-self: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    border:none;
+}
+
+
+.side{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.side img{
+    width:430px;
+    height:520px;
+}
+
+
+/*@media screen and (max-width: 700px){
+    #form{
+        width:65%;
+        padding:40px;
+    }
+}*/
+

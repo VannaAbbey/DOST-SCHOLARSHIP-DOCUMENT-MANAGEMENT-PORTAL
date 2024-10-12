@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQs - DOST Scholarship Requirements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #a2cfee;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+        }
+        .navbar a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 15px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 200;
+        }
+        .navbar a:hover {
+            background-color: #f2f2f2;
+            color: black;
+            height: 30px;
+        }
+        .navbar .title {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 25px;
+            color: #2d4a7b;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container {
+            width: 90%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 70px auto 20px; /* Add top margin to avoid overlap with navbar */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .faq {
+            width: 100%;
+        }
+        .faq h3, .faq p {
+            margin-bottom: 10px;
+        }
+        .faq ul {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="profilestudent.php">Profile</a>
+        <a href="calendarstudent.php">Calendar</a>
+        <div class="title">Student Dashboard</div>
+        <a href="#">FAQs</a>
+        <a href="logout.php" onclick="exitPage();">Exit</a>
+    </div>
+
+    <div class="container">
+        <h2>Frequently Asked Questions (FAQs)</h2>
+        <div class="faq">
+            <h3>1. What is the purpose of this website?</h3>
+            <p>This website is designed to facilitate the submission of PDF files for DOST scholarship requirements. Students can upload, view, and manage their submitted documents easily.</p>
+
+            <h3>2. How do I upload a PDF file?</h3>
+            <p>To upload a PDF file:</p>
+            <ul>
+                <li>Go to the Student Dashboard.</li>
+                <li>Click on the "Select PDF to upload" button.</li>
+                <li>Choose the PDF file from your computer.</li>
+                <li>Click the "Upload PDF" button.</li>
+            </ul>
+
+            <h3>3. How many files can I upload? What are those?</h3>
+            <p>You can only upload one (1) PDF file that contains the following:</p>
+            <ul>
+                <li>Certificate of Registration (COR)</li>
+                <li>Informative Copy of Grades</li>
+                <li>DOST List of Documents Form</li>
+            </ul>
+
+            <h3>4. What is the format for the file name?</h3>
+            <p>Lastname_Semester_YearLevel</p>
+            
+            <h3>5. What types of files can I upload?</h3>
+            <p>You can upload PDF files only. Ensure that your file is in PDF format and named appropriately before uploading.</p>
+
+            <h3>6. How do I know if my file has been successfully uploaded?</h3>
+            <p>After uploading, you will see a confirmation message on the screen. You can also check the "Uploaded PDF Files" section on the Student Dashboard to see your submitted files and their status.</p>
+
+            <h3>7. What do the different file statuses mean?</h3>
+            <ul>
+                <li><strong>Accepted:</strong> Your file has been reviewed and accepted.</li>
+                <li><strong>Processing:</strong> Your file is currently being reviewed.</li>
+                <li><strong>Not Accepted:</strong> Your file was not accepted. Please check the requirements and try again.</li>
+            </ul>
+
+            <h3>8. Can I delete an uploaded file?</h3>
+            <p>Yes, you can delete an uploaded file by clicking the "Delete PDF" button next to the file in the "Uploaded PDF Files" section.</p>
+
+            <h3>9. What should I do if I uploaded the wrong file?</h3>
+            <p>If you uploaded the wrong file, delete it from the "Uploaded PDF Files" section and upload the correct file.</p>
+
+            <h3>10. How can I view my uploaded files?</h3>
+            <p>Go to the "Uploaded PDF Files" section on the Student Dashboard to view your uploaded files along with their upload date and status.</p>
+
+            <h3>11. Can I re-upload a file that was not accepted?</h3>
+            <p>Yes, you can re-upload a file that was not accepted. Ensure that you follow the file naming conventions and requirements before re-uploading.</p>
+
+            <h3>12. Why was my file not accepted?</h3>
+            <p>Your file may not have been accepted due to incorrect format, naming issues, or other requirements not being met. Please review the requirements and try again.</p>
+
+            <h3>13. Is there a limit to the number of files I can upload?</h3>
+            <p>Yes, please collate your Certificate of Registration (COR), Informative Copy of grades, and DOST List of Documents form into one PDF file only.</p>
+
+            <h3>14. How do I log out of the Student Dashboard?</h3>
+            <p>Click on the "Exit" link in the top navigation bar to log out of the Student Dashboard.</p>
+        </div>
+    </div>
+</body>
+</html>

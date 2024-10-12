@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma, Geneva, sans-serif;
+            background-color: #004999; /* Blue background */
+        }
+        .navbar {
+            width: 100%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            margin: 0 10px;
+            font-size: 14px; /* Reduced font size */
+        }
+        .navbar a.govph {
+            font-size: 18px; /* Larger font size for GOVPH */
+            font-weight: bold;
+            margin-right: 20px; /* Additional space after GOVPH */
+        }
+        .navbar a:hover, .navbar a.dropdown:hover {
+            text-decoration: underline;
+        }
+        .navbar .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            z-index: 1;
+        }
+        .navbar .dropdown-content a {
+            display: block;
+            padding: 10px 15px;
+        }
+        .navbar .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .navbar .dropdown a::after {
+            content: '▼'; /* Dropdown arrow */
+            font-size: 10px;
+            margin-left: 5px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 60px); /* Full height minus navbar */
+            padding: 20px;
+        }
+        .top {
+            display: flex;
+            align-items: center;
+            height: 25%;
+            border-bottom: 1px solid white; /* Separator line */
+        }
+        .top img {
+            max-width: 10%;
+            margin-right: 20px;
+        }
+        .top div {
+            text-align: left;
+            color: white;
+            font-family: 'Georgia', serif; /* Less bold serif font */
+        }
+        .top h1 {
+            font-size: 1.0rem;
+            margin: 0;
+            font-weight: normal; /* Less bold */
+        }
+        .top h2 {
+            font-size: 1.5rem; 
+            margin: 0;
+            font-weight: normal; /* Less bold */
+        }
+        .bottom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 75%;
+        }
+        .bottom img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid white;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="govph">GOVPH</a>
+        <a href="#">Home</a>
+        <a href="#">Transparency</a>
+        <a href="#">Services</a>
+        <div class="dropdown">
+            <a href="#" class="dropdown">Programs and Projects</a>
+            <div class="dropdown-content">
+                <a href="signup.php">DOST Scholarship Requirements Submission</a>
+            </div>
+        </div>
+        <a href="#">Resources</a>
+        <a href="#">Agency Links</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div class="container">
+        <div class="top">
+            <img src="logo.png" alt="Logo">
+            <div>
+                <h1>REPUBLIC OF THE PHILIPPINES</h1>
+                <hr>
+                <h2>DEPARTMENT OF SCIENCE AND TECHNOLOGY</h2>
+            </div>
+        </div>
+        <div class="bottom">
+            <img src="bg.png" alt="Main Image">
+        </div>
+    </div>
+</body>
+</html>
